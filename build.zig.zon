@@ -1,0 +1,10 @@
+.{
+    .name = "achordion",
+    .version = "0.0.1",
+    .paths = .{ "build.zig", "build.zig.zon" },
+    .dependencies = .{
+        .raylib = .{
+            .path = "raylib",
+        },
+    },
+}
