@@ -12,7 +12,7 @@ bool build_achordion(void)
     nob_cmd_append(&cmd, "-Wall", "-Wextra", "-ggdb");
     nob_cmd_append(&cmd, "-I./raylib/raylib-"RAYLIB_VERSION"/src/");
     nob_cmd_append(&cmd, "-o", "./build/achordion");
-    nob_cmd_append(&cmd, "./src/main.c");
+    nob_cmd_append(&cmd, "./src/achordion.c");
     nob_cmd_append(&cmd,
                    nob_temp_sprintf("-L./build/raylib/%s", ACHORDION_TARGET_NAME));
 #ifndef SHARED
